@@ -1,0 +1,813 @@
+html,
+body,
+#react-root {
+  height: 100%;
+  background-color: mintcream;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family:'Courier New', Courier, monospace; */
+  margin: 0px;
+}
+
+/* p {
+  font-family: monospace;
+} */
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* title {
+  font-family: 'Abril Fatface', cursive;;
+} */
+
+/* --------------------------------------------------------------------------------
+Container
+-------------------------------------------------------------------------------- */
+
+.container {
+  padding: 20px;
+}
+
+/* --------------------------------------------------------------------------------
+Button
+-------------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-color: #014041;
+  border-width: 1px 1px 3px;
+  border-radius: 4px;
+  background-color: #00acb0;
+  color: #f8f8f8;
+  font-size: 1.1rem;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn_sizeMin {
+  min-height: 50px;
+  min-width: 100px;
+}
+
+.btn_sizeSm {
+  padding: 10px 15px;
+  font-size: 0.8rem;
+}
+
+.btn_sizeFull {
+  display: block;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #008183;
+  text-decoration: none;
+}
+
+/* This line makes the "Register" and "Login" buttons look like links */
+.btn_asLink {
+  padding: 0;
+  border-width: 0;
+  border-bottom: 1px solid #444;
+  border-radius: 0;
+  background: none;
+  font: inherit;
+  color: #444;
+}
+
+.btn_asLink:hover {
+  background-color: transparent;
+  border-color: #008183;
+  color: #008183;
+}
+
+/* --------------------------------------------------------------------------------
+Alert
+-------------------------------------------------------------------------------- */
+
+.alert {
+  box-sizing: border-box;
+  padding: 15px 10px;
+  margin: 15px 0;
+  border: 2px solid #e01616;
+  background-color: #efefef;
+  border-radius: 3px;
+  color: #e01616;
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------------
+Form Treatment
+-------------------------------------------------------------------------------- */
+
+.formPanel {
+  box-sizing: border-box;
+  width: 400px;
+  max-width: 100%;
+  padding: 25px;
+  margin: 0 auto 20px;
+  background-color: #efefef;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4);
+}
+
+input {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+/*----------WELCOME----------------------*/
+
+.welcomeBackground {
+  width: 100%;
+  height: 400px;
+  
+}
+
+.welcomePageDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcomeBox {
+  background-color: mintcream;
+  width: 400px;
+  height: 200px;
+  margin-top: 90px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.welcomeBoxAlign {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* -----------------------------------------------------------------------------------------
+Inventory API Images
+----------------------------------------------------------------------------------------- */
+.apiImage {
+  max-width: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.apiResultsContainer {
+  /* width: 750px; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.addInventoryForm {
+  margin-right: 100px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.apiResultCard {
+  max-width:250px;
+  text-align: center;
+  margin-top: 25px;
+  box-shadow: 10px 10px 10px;
+  border: solid;
+  border-radius: 5px;
+  font-family:'Courier New', Courier, monospace;
+  background-color: white;
+}
+
+.apiResultCard:hover {
+  border-color: black; 
+  border-width: 3px;
+  box-shadow: 0 0 0;
+  border-radius: 5px;
+}
+
+/* .apiImageText {
+  width: 250px;
+} */
+
+/* -----------------------------------------------------------------------------------------
+Search Page
+----------------------------------------------------------------------------------------- */
+
+.searchImage {
+  width: 200px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; 
+  
+}
+
+.albumTitle {
+  font-weight: bold;
+  ;
+}
+
+/* .searchImage:hover {
+  width: 200px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px;  */
+  
+
+
+.allResultsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+  /* margin-left: 100px; */
+  /* justify-items: center;  */
+}
+
+.resultsContainer {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* margin-left: 100px; */
+  width: 200px;
+  box-shadow: 10px 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: solid;
+  background-color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.resultsContainer:hover {
+  border-color: black; 
+  border-width: 3px;
+  box-shadow: 0 0 0;
+  border-radius: 5px;
+  
+}
+
+.searchFormDiv {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  
+}
+
+.searchCardText {
+  text-align: center;
+  background-color: white;
+}
+
+.allAlbumsContainer {
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 100px;
+  font-family:'Courier New', Courier, monospace;
+  /* margin-left: 100px; */
+}
+
+.albumCardContainer {
+  
+  width: 200px;
+  box-shadow: 10px 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: solid thin;
+  background-color: white;
+  
+
+}
+
+.albumCardContainer:hover {
+  border-color: black; 
+  border-width: 3px;
+  box-shadow: 0 0 0;
+  border-radius: 5px;
+}
+
+.searchHeading {
+  text-align: center;
+}
+
+/* -----------------------------------------------------------------------------------------
+User/Inventory Page
+----------------------------------------------------------------------------------------- */
+
+.inventoryImage {
+  box-shadow: 5px 5px 5px;
+}
+
+.inactiveInventoryImage {
+  box-shadow: 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.displayContainer {
+  display: flex;
+ 
+
+}
+
+.userProfileContainer {
+  width: 45%;
+   margin-left: 100px;
+   margin-right: 40px;
+   margin-top: 22px;
+}
+
+.userInventoryContainer {
+  width: 55%;
+  padding-right: 100px; 
+}
+
+.inactiveListings {
+  margin-top: 40px
+}
+
+.profileText {
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.bioTitle {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bioText {
+  font-weight: 100;
+}
+
+.profileUserName {
+  font-weight: bold;
+  font-size: x-large ;
+}
+
+/* .inventoryImageContainer {
+  width: 25%;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+} */
+
+.userInventoryCard {
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 20px;
+  max-height: 150px;
+  /* padding-top: auto; */
+  /* padding-bottom: auto; */
+  /* justify-content: space-between; */
+  box-shadow: 10px 10px 10px;
+  border-radius: 5px;
+  background-color: white;
+  min-height: 120px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bold;
+  color: rgb(62, 61, 61);
+  /* width: 400px; */
+}
+
+.inactiveUserInventoryCard {
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 20px;
+  max-height: 180px;
+  /* padding-top: auto; */
+  /* padding-bottom: auto; */
+  /* justify-content: space-between; */
+  box-shadow: 10px 10px 10px;
+  border-radius: 5px;
+  background-color: white;
+  min-height: 120px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bold;
+  color: rgb(62, 61, 61);
+}
+
+.userInventoryImageContainer {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+  /* margin-right: 50px; */
+}
+
+.inactiveUserInventoryImageContainer {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+  /* margin-right: 50px; */
+}
+
+.userInventoryCardDetails {
+  width: 50%;
+  /* padding-left: 10px; */
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-right: 25px; */
+}
+
+.inactiveUserInventoryCardDetails {
+  width: 50%;
+  margin-left: 40px;
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-right: 25px; */
+}
+
+.userInventoryCardButtonContainer {
+  width: 25%;
+  margin-left: 40px;
+  /* padding-left: 20px */
+}
+
+.albumCardBtnsDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 20px;
+  /* margin-right: 15px; */
+  /* width: 25%; */
+}
+
+
+
+
+
+.inactiveUserInventoryCardButtonContainer {
+  width: 25%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .inactiveAlbumCardBtnsDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 15px;
+   width: 25%;
+} */
+
+.cardBtn {
+  margin-bottom: 20px;
+}
+
+.cardDetailsSpacer {
+  width: 25%;
+}
+
+.inventory_addBtnContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userProfilePageTitle {
+  text-align: center;
+  padding-bottom: 20px;
+
+
+}
+
+
+
+
+/* ---------------------------------------- */
+/* detail page */
+
+.detailsDisplayContainer {
+  display: flex;
+}
+
+
+.detailPageImage {
+  max-width: 250px;
+  box-shadow: 10px 10px 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+
+.messageBox {
+  width: 500px;
+  height: 200px;
+  border-style: solid;
+}
+
+.albumDetails-TraderContainer {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.imagesAndMessageContainer { 
+  width: 50%;
+  padding-right: 100px;
+}
+
+.albumDetailsText {
+  min-height: 250px;
+}
+
+.detailsText {
+  padding-right: 100px;
+}
+
+.titleHeading {
+  font-size: x-large;
+}
+
+
+
+/* -------------------------------------------------- */
+/* trader page */
+
+.traderPageContainer {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.traderProfileContainer {
+  width: 40%;
+  padding-left: 100px;
+}
+
+.traderInventoryContainer {
+  width: 60%;
+  padding-right: 100px;
+}
+
+.traderInventoryCard:hover {
+  border-color: black; 
+  border-width: 3px;
+  box-shadow: 0 0 0;
+  border-radius: 5px;
+}
+
+.traderInventoryCard {
+  display: flex;
+  border-style: solid;
+  border-width: thin;
+  background-color: white;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  margin-bottom: 12px;
+  box-shadow: 5px 5px 10px;
+  border-radius: 5px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.inventoryImageContainer {
+  width: 100px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inventoryImage {
+  width: 100px;
+  /* width: 25%; */
+  border-radius: 5px;
+}
+
+.artistAlbumContainer {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.publishedYearContainer {
+  width: 25%;
+  /* margin-right: 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .spacerDiv {
+  width: 33%;
+} */
+
+.conditionContainer {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding-left: 20px; */
+}
+
+
+
+/* ----------------------------------------- */
+ /* completeAddInventory */
+
+.completeDescriptionImage {
+  max-width: 250px;
+  margin-bottom: 250x;
+  box-shadow: 10px 10px 10px;
+  border-radius: 5px;
+  
+}
+
+.editDescriptionContainer {
+  margin-left: 100px;
+}
+
+.completeAddInventoryContainer {
+  /* display: flex; */
+}
+
+.completeAddInventoryFullDisplay {
+  display: flex;
+  margin-left: 100px;
+  /* width: 50% */
+}
+
+.album-Details-Container {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.instructionText {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.albumInfoContainer {
+  margin-bottom: 35px;
+  margin-top: 25px;
+}
+
+.detailsTextNotBold {
+  font-weight: 100;
+}
+
+/* ----------------------------------
+Profile Completion */
+
+.pageContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.notBold {
+  font-weight: 100;
+}
+
+/* -------------------------- */
+.threadsPageContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.threadCard {
+display: flex;
+border-style: solid;
+border-width: thin;
+background-color: white;
+justify-content: space-between;
+position: relative;
+margin-bottom: 12px;
+box-shadow: 5px 5px 10px;
+border-radius: 5px;
+max-width: 550px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.threadCard:hover {
+  border-color: black; 
+  border-width: 3px;
+  box-shadow: 0 0 0;
+  border-radius: 5px;
+}
+
+.threadImage {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.threadImageContainer {
+  width: 25%;
+  margin-left: 15px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.threadArtistAlbumContainer {
+  text-align: center;
+  max-width: 200px;
+}
+
+.mostRecentMessage {
+  max-width:125px;
+  margin-right: 15px;
+  margin-left: 25px;
+}
+
+/* ----------messages------------ */
+.messageDiv {
+  /* max-width: 200px;
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px; */
+  margin-bottom: 20px;
+}
+
+.messageDetails {
+  max-width: 300px;
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 5px 5px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #444;
+
+  
+}
+
+.rightAlign {
+ margin-left: 30%;
+}
+
+.messagePageContainer {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.wholeMessageContainer {
+
+}
+
+.messageHeader {
+  font-size: small;
+}
+
+.messageBtnDiv {
+  margin-left: 500px;
+}
+
+.messageImage {
+  max-width: 100px;
+}
+
+.messagesArtist-Album-Image {
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.messagesArtist-Album {
+  margin-left: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  /* max-height: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.artist-title-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.artistNameMargin {
+  margin-bottom: 10px;
+}
+
+
